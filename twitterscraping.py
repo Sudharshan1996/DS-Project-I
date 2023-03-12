@@ -15,7 +15,7 @@ maxTweets = 1000
 
 # Variable declaraion for user inputs
 hashtag = st.sidebar.text_input("Enter the keyword or hashtag :")
-tweets_count = st.sidebar.number_input("Enter the number of tweets to scrape : ", min_value = 1, max_value = 1000)
+tweets_count = st.sidebar.number_input("Enter the number of tweets to scrape : ", min_value = 0, max_value = 1000,step = 1)
 st.sidebar.subheader(":blue[Select the date range]:calendar:")
 start_date = st.sidebar.date_input("Start date (YYYY-MM-DD) : ")
 end_date = st.sidebar.date_input("End date (YYYY-MM-DD) : ")
